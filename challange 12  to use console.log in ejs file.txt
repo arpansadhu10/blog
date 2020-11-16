@@ -1,0 +1,11 @@
+while rendering the ejs file in the home route we should pass the array posts as a object and in the ejs file we have access to posts in ejs and we can use the scriplet tag to console log then 
+
+
+app.get("/",function(req,res){
+
+res.render("home" ,{
+
+startingContent:homeStartingContent,
+posts:posts
+};
+});
